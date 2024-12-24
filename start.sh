@@ -6,7 +6,7 @@ then
 else
   echo "Cloning $BRANCH branch...."
   git clone https://github.com/JishuDeveloper/Ultra-Forward-Bot -b $BRANCH /Ultra-Forward-Bot
-fi
+if
 cd JishuDeveloper/Ultra-Forward-Bot
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
