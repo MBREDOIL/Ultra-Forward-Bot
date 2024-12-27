@@ -8,4 +8,5 @@ RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN JishuDeveloper /Ultra-Forward-Bot
 WORKDIR /Ultra-Forward-Bot
-CMD start.sh /start.sh
+COPY start.sh /start.sh
+CMD ["/bin/sh", "/start.sh"]
